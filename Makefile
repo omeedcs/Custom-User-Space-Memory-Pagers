@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall
 
-all: apager dpager hpager ELF
+all: apager dpager hpager ELF helloworld sumoftwo
 
 apager: apager.c
 	$(CC) $(CFLAGS) -o apager apager.c
@@ -16,4 +16,4 @@ ELF: ELF.c
 	$(CC) $(CFLAGS) -o ELF ELF.c
 
 clean:
-	rm -f apager dpager hpager ELF
+	rm -f apager dpager hpager ELF helloworld sumoftwo
