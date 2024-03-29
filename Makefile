@@ -3,13 +3,13 @@ CFLAGS = -Wall
 
 all: apager dpager hpager
 
-apager: APager.c
+apager: apager.c
 	$(CC) $(CFLAGS) -o apager apager.c
 
-dpager: DPager.c
+dpager: dpager.c
 	$(CC) $(CFLAGS) -o dpager dpager.c
 
-hpager: HPager.c
+hpager: hpager.c
 	$(CC) $(CFLAGS) -o hpager hpager.c
 
 clean:
